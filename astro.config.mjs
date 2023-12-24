@@ -19,7 +19,6 @@ export default defineConfig({
   base: SITE.base,
   trailingSlash: SITE.trailingSlash ? 'always' : 'never',
   output: 'server',
-  adapter: cloudflare(),
   integrations: [tailwind({
     applyBaseStyles: false
   }), sitemap(), mdx(), icon({
